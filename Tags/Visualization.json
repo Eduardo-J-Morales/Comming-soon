@@ -1,0 +1,72 @@
+{
+  "data": [
+    { "title": "color", 
+      "concept": "The color of the bot." },
+   
+    { "title": "cursor", 
+      "concept": "
+      The cursor that should be used when the mouse pointer is hovering over the bot in the bot and menu portals.
+      Note that when using a custom cursor image, the image should be 32x32 pixels or smaller. 
+      This is because that is the largest cursor image size taht some operating systems support.
+      " },
+    
+    { "title": "cursorHotspot", 
+      "concept": "The X and Y position of the pixel in the cursor image that is the 'hotspot'. 
+      That is, the pixel which represents the point or tip of the cursor
+      The top left of the image is (0,0)." },
+    
+    { "title": "strokeColor", 
+      "concept": "The color of the bot's outline." },
+    
+    { "title": "strokeWidth", 
+      "concept": "The width of the bot's outline." },
+    
+    { "title": "lineTo", 
+      "concept": "The bot, bot ID, list of bots, or list of bot IDs that this bot should draw lines to." },
+    
+    { "title": "lineWidth", 
+      "concept": "The width of the lines from this bot" },
+    
+    { "title": "lineColor", 
+      "concept": "The color of the lines." },
+    
+    { "title": "label", 
+      "concept": "The text that the bot should show in a label." },
+    
+    { "title": "", 
+      "concept": "" },
+    
+    { "title": "", 
+      "concept": "" },
+    
+    { "title": "", 
+      "concept": "" },
+    
+    { "title": "", 
+      "concept": "" },
+    
+    { "title": "", 
+      "concept": "" },
+    
+    { "title": "", 
+      "concept": "" },
+    
+    { "title": "", 
+      "concept": "" },
+    
+    { "title": "", 
+      "concept": "" },
+    
+    { "title": "", 
+      "concept": "" },
+    
+    { "title": "", 
+      "concept": "" },
+    
+    { "title": "", 
+      "concept": "" },
+    
+    { "title": "", 
+      "concept": "" }
+  ]
+}
