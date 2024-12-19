@@ -33,17 +33,17 @@
     { "title": "label", 
       "concept": "The text that the bot should show in a label." },
     
-    { "title": "", 
-      "concept": "" },
+    { "title": "labelColor", 
+      "concept": "The color of the text in the label." },
     
-    { "title": "", 
-      "concept": "" },
+    { "title": "labelOpacity", 
+      "concept": "The opacity of the text in the label." },
     
-    { "title": "", 
-      "concept": "" },
+    { "title": "labelFontSize", 
+      "concept": "The font size of the text in the label. Changing this value scales the text characters in the label which changes the text layout." },
     
-    { "title": "", 
-      "concept": "" },
+    { "title": "labelPadding", 
+      "concept": "The amount of space that should be between the edge of the bot and the edge of the label. Units are in grid spaces. When #labelFontSize is set to auto, this setting affects both the label height and width. Otherwise, it only affects the width." },
     
     { "title": "", 
       "concept": "" },
