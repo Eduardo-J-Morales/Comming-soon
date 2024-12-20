@@ -169,18 +169,18 @@
       "concept": "The custom CSS styles that should be applied to the menu item. Only applies to bot that are being shown in the menu portal. This is useful for positioning and styling the item in ways that are not possible using normal tags. Overridden by conflicting properties like #color or #labelColor. When setting this tag via the sheet, it is useful to utilize DNA tags to ensure that the resulting value is considered an object." },
 
     { "title": "menuItemLabelStyle", 
-      "concept": "The custom CSS styles that should be applied to the menu item label. Only applies to bots that are being shown in the menu portal. This is useful for styling the label in ways that are not possible using normal tags. Overrides conflicting properties like #color or #labelColor." },
+      "concept": "The custom CSS styles that should be applied to the menu item label. Only applies to bots that are being shown in the menu portal. This is useful for styling the label in ways that are not possible using normal tags. Overrides conflicting properties like #color or #labelColor. When setting this tag via the sheet, it is useful to utilize DNA tags to ensure that the resulting value is considered an object. Note: when using a larger font size you may also need to increse the line-height. The default line-eight is '24px'." },
 
-    { "title": "", 
-      "concept": "" },
+    { "title": "menuItemHoverMode", 
+      "concept": "The mode that menu items should use when the cursor hovers over the bot when it is in the menu portal. Currently only affects menu bots that are button (input bots are not hoverable). Note that this only determines how the menu item looks when the mouse pointer hovers over the item. It does not affect the @onClick, @onPointerEnter, @onPointerExit, etc, listeners." },
 
-    { "title": "", 
-      "concept": "" },
+    { "title": "menuItemText", 
+      "concept": "The text that has been entered in the menu item's input box. Only has an affect on menu items that have #form set to input. This tag will also be updated in the tempLocal space when the user types in the input box." },
 
-    { "title": "", 
-      "concept": "" },
+    { "title": "menuItemText", 
+      "concept": "The text that has been entered in the menu item's input box. Only has an effect on menu items that ahve #form set to input. This tag will also be updated in the tempLocal space when the user types in the input box." },
 
-    { "title": "", 
+    { "title": "MenuItemShowSubmitWhenEmpty", 
       "concept": "" },
   ]
 }
