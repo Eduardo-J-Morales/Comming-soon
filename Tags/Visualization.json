@@ -45,28 +45,79 @@
     { "title": "labelPadding", 
       "concept": "The amount of space that should be between the edge of the bot and the edge of the label. Units are in grid spaces. When #labelFontSize is set to auto, this setting affects both the label height and width. Otherwise, it only affects the width." },
     
+    { "title": "labelPaddingX", 
+      "concept": "The amount of space that should be between the side of the bot and the side of the label. Units are in grid spaces. This tags is similar to #labelPadding except that it only affects the width of the label." },
+    
+    { "title": "labelPaddingY", 
+      "concept": "The amount of space that should be between the top of the bot and the top of the label. Units are in grid spaces. This tag is similar to #labelPadding except that it only affects the height of the label. As such, this tag only has an affect when #labelFontSize is set to auto." },
+    
+    { "title": "labelSizeMode", 
+      "concept": "The sizing mode for the label." },
+    
+    { "title": "labelPosition", 
+      "concept": "The anchor position for the label." },
+    
+    { "title": "labelAlignment", 
+      "concept": "The text alignment for the label." },
+    
+    { "title": "labelFontAddress", 
+      "concept": "The address of the font that the label should use." },
+    
+    { "title": "labelWordWrapMode", 
+      "concept": "The word wrapping mode that the label should use. Useful for automatically fitting the text onto the bot." },
+    
+    { "title": "labelFloatingBackgroundColor", 
+      "concept": "The background color of the floating label. Only works when #labelPosition is set to floating or floatingBillboard." },
+
+    { "title": "scale", 
+      "concept": "The uniform scale of the bot. Defaults is to 1." },
+
+    { "title": "scaleX", 
+      "concept": "The X scale (width) of the bot. Combines with the #scale tag to determine the final width of the bot. Defaults to 1." },
+
+    { "title": "scaleY", 
+      "concept": "The Y scale (length) of the bot. Combines with the #scale tag to determine the final length of the bot. For menu bots, you can use auto. This scales the bot's height to fit its label. Defaults to 1." },
+
+    { "title": "scaleZ", 
+      "concept": "The Z scale (height) of the bot. Combines with the #scale tag to determine the final height of the bot. Defaults to 1." },
+
+    { "title": "scaleMode", 
+      "concept": "How the form is scaled to fit inside the bot. Note that this setting does not affect #scale, #scaleX, #scaleY or #scaleZ. Instead, it ccahnges how custom forms like meshes are scaled to fit inside the unit cube. Also note that this setting affects a bot's collision volume. The collision volume will always try to wrap the bot's form to the best of tis ability. This means that if you have a really large mesh the collider will scale up to surround the mesh." },
+
+    { "title": "form", 
+      "concept": "The shape that the bot should be displayed as." },
+
+    { "title": "formSubtype", 
+      "concept": "The subtype that the form should use. Useful for specifying how a mesh should be loaded." },
+
+    { "title": "formLightIntensity", 
+      "concept": "The intensity of the light." },
+
+    { "title": "formLightTarget", 
+      "concept": "The target of the light. Bot must have a #formSubtype of directionalLight or spotLight. Bot can not target self." },
+
+    { "title": "formLightDistance", 
+      "concept": "The maximum range of the light. Bot must have a #formSybtype of spotLight." },
+
+    { "title": "formLightAngle", 
+      "concept": "Represents the angle between edges of spotLight. Bot must have a #formSubtype of spotLight. Angle is in radians." },
+
+    { "title": "formLightPenumbra", 
+      "concept": "Represents the percent of the spoltight cone that is attenuated due to penumbra. Bot must have a #formSubtype of spotLight. Takes values between 0 and 1." },
+
+    { "title": "formLightDecay", 
+      "concept": "The amount the light dims along the distance of the light. Bot must have a #formSubtype of spotlight. In context of physically-correct rendering the default value should not be changed." },
+
+    { "title": "formLightGroundColor", 
+      "concept": "The light's ground color.Bot must have a #formSubytpe of hemisphereLight." },
+
+    { "title": "formAddress", 
+      "concept": "The address that the bot should represent the data from. When #form is set to cube, skybotx, sphere, or sprite, the address should be the URL  of the image that the bot should display. When #form is set to mesh and #formSubtype is set to gltf, the address should be the URL of the GLTF file that should be displayed." },
+
     { "title": "", 
       "concept": "" },
-    
+
     { "title": "", 
       "concept": "" },
-    
-    { "title": "", 
-      "concept": "" },
-    
-    { "title": "", 
-      "concept": "" },
-    
-    { "title": "", 
-      "concept": "" },
-    
-    { "title": "", 
-      "concept": "" },
-    
-    { "title": "", 
-      "concept": "" },
-    
-    { "title": "", 
-      "concept": "" }
   ]
 }
