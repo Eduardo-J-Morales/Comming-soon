@@ -4,16 +4,10 @@
       "concept": "The color of the bot." },
    
     { "title": "cursor", 
-      "concept": "
-      The cursor that should be used when the mouse pointer is hovering over the bot in the bot and menu portals.
-      Note that when using a custom cursor image, the image should be 32x32 pixels or smaller. 
-      This is because that is the largest cursor image size taht some operating systems support.
-      " },
+      "concept": "The cursor that should be used when the mouse pointer is hovering over the bot in the bot and menu portals. Note that when using a custom cursor image, the image should be 32x32 pixels or smaller. This is because that is the largest cursor image size taht some operating systems support." },
     
     { "title": "cursorHotspot", 
-      "concept": "The X and Y position of the pixel in the cursor image that is the 'hotspot'. 
-      That is, the pixel which represents the point or tip of the cursor
-      The top left of the image is (0,0)." },
+      "concept": "The X and Y position of the pixel in the cursor image that is the 'hotspot'. That is, the pixel which represents the point or tip of the cursor The top left of the image is (0,0)." },
     
     { "title": "strokeColor", 
       "concept": "The color of the bot's outline." },
@@ -112,7 +106,7 @@
       "concept": "The light's ground color.Bot must have a #formSubytpe of hemisphereLight." },
 
     { "title": "formAddress", 
-      "concept": "The address that the bot should represent the data from. When #form is set to cube, skybotx, sphere, or sprite, the address should be the URL  of the image that the bot should display. When #form is set to mesh and #formSubtype is set to gltf, the address should be the URL of the GLTF file that should be displayed." },
+      "concept": "The address that the bot should represent data from. Whe #form is set to cube, skybox, shpere, or sprite, the address should be the URL of the image that the bot should display. When #form is set to mesh and #formSubtype is set to gltf, the address should be the URL of the GLTF file that should be displayed. When #form is set to iframe and #formSybtype is set to html, the address should b ethe HTML that should be displayed. When #form is set to iframe and #formSybtype is set to src, the address should be the HTML that should be displayed. When the bot is in the menu portal, this is the URL of the image or video that should be shown on the menu item. It can also be cube to show an icon of a cube," },
 
     { "title": "", 
       "concept": "" },
