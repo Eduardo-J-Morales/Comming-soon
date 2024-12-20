@@ -106,12 +106,58 @@
       "concept": "The light's ground color.Bot must have a #formSubytpe of hemisphereLight." },
 
     { "title": "formAddress", 
-      "concept": "The address that the bot should represent data from. Whe #form is set to cube, skybox, shpere, or sprite, the address should be the URL of the image that the bot should display. When #form is set to mesh and #formSubtype is set to gltf, the address should be the URL of the GLTF file that should be displayed. When #form is set to iframe and #formSybtype is set to html, the address should b ethe HTML that should be displayed. When #form is set to iframe and #formSybtype is set to src, the address should be the HTML that should be displayed. When the bot is in the menu portal, this is the URL of the image or video that should be shown on the menu item. It can also be cube to show an icon of a cube," },
+      "concept": "The address that the bot should represent data from. Whe #form is set to cube, skybox, shpere, or sprite, the address should be the URL of the image that the bot should display. When #form is set to mesh and #formSubtype is set to gltf, the address should be the URL of the GLTF file that should be displayed. When #form is set to iframe and #formSybtype is set to html, the address should b ethe HTML that should be displayed. When #form is set to iframe and #formSybtype is set to src, the address should be the HTML that should be displayed. When the bot is in the menu portal, this is the URL of the image or video that should be shown on the menu item. It can also be cube to show an icon of a cube, egg to show an egg icon, and helix to show an icon of a DNA helix. If the given value is not a URL or one of the predefined icons, then the specified Material Icon wil be shown." },
 
+    { "title": "formAddressAspectRatio", 
+      "concept": "The aspect ratio that should be used to ensure that the the image/video from #formAddress is displayed correctly. Aspect ratio is the numerical ratio representing the width of an image divided by the height. For example, a 1080p image has a resolution of 1920x1080 which means it has an aspect ratio of 1920/1080 = 16/9 = ~1.7777777. By default, CasualOS displays all images with an aspect ratio of 1. An aspect ratio of 1 ensures that the entire bot is covered, but if the original image has a different aspect ratio then it will appear distorted. To solve this, you can use the #formAddressAspectRatio tag to ensure that the aspect ratio that the image is displayed at matches the original aspect ratio. Also note that the negative aspect ratios will mirror the image horizontally. Currently only sypported by the cube, circle, and spreite forms." },
+
+    { "title": "formAnimation", 
+      "concept": "The name of the animation that the mesh should play. Only works for mesh forms." },
+    
+    { "title": "formAnimationAddress", 
+      "concept": "The URL that the animations for the mesh should be loaded from. For GLTF forms, this should be the URL of the GLTF file that contains the animaitons that should be used for the mesh." },
+    
+    { "title": "meshPositioningMode", 
+      "concept": "The positioning mode that should be used for GLTF meshes." },
+    
+    { "title": "formOpacity", 
+      "concept": "The opacity of the bot's form. Allows bots to be semi-transparent." },
+    
+    { "title": "formRenderOrder", 
+      "concept": "The render order that should be used for this bot in the grid portals. Setting this property to a value other than 0 overrides the automatically calculated render order which is based on the distance of each bot to the portal camera. It is not recommended to use this tag unless you ra dealing with transparency issues caused by overlapping PNG #formAddress images. Higher values mean the bot will be rendered first, and lower values means the bot will be rendered last." },
+    
+    { "title": "formDepthTest", 
+      "concept": "Whether depth testing is enabled for this bot in the grid portals." },
+    
+    { "title": "formDepthWrite", 
+      "concept": "Whether depth writting is enabled for this bot in the grid protals." },
+    
+    { "title": "formBuildStep", 
+      "concept": "The build step that should be displayed for the bot's LDraw file. Only works for bots that have a #form of mesh and a #formSybtype of ldraw or ldrawText. Use of.ldrawCountAddressBuildSteps() or os.ldrawCountTextBuildSteps() to get the number of build steps that an LDraw file has." },
+    
+    { "title": "formLDrawPartsAddress", 
+      "concept": "The address that additional parts should be loaded from for the bot's LDraw file. Only works for bots that have a #form of mesh and #formSybtype of ldraw or ldrawText." },
+    
+    { "title": "gltfVersion", 
+      "concept": "The GLTF specification version that should be used to load a GLTF model." },
+    
+    { "title": "progressBar", 
+      "concept": "Causes a progress bar to be shown for the bot. Range is between 0 and 1. Needs both progressBarBackgroundColor and progressBarColor to visualize the progress." },
+  
+    { "title": "progressBarColor", 
+      "concept": "The foreground color of the progress bar." },
+    
+    { "title": "progressBarBackgroundColor", 
+      "concept": "The background color of the progress bar." },
+    
+    { "title": "pogressBarPosition", 
+      "concept": "The anchor position for the progess bar." },
+    
     { "title": "", 
       "concept": "" },
-
+    
     { "title": "", 
       "concept": "" },
+    
   ]
 }
