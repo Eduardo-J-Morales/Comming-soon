@@ -153,11 +153,34 @@
     { "title": "pogressBarPosition", 
       "concept": "The anchor position for the progess bar." },
     
+    { "title": "anchorPoint", 
+      "concept": "The position that the bot form should rotate and scale around." },
+    
+    { "title": "orientationMode", 
+      "concept": "The mode that determines how the bot automatically rotates." },
+
+    { "title": "maxLOADThereshold", 
+      "concept": "The minimum percentage of the screen that the bot form should take up in order to enter the maximum Level-Of-Detail. When the maximum LOD is entered the @onMaxLODEnter listener is triggered. When the maximum LOD is exited the @onMaxLODExit listener is triggered." },
+
+    { "title": "minLODThreshold", 
+      "concept": "The maximum percentage of the screen that the bot form should tak up in order to enter the minimum Level-Of-Detail. When the minimum LOD is entered the @onMinLODEnter listener is triggered. When the minimum LOD is exited the @onMinLODExit listener is triggered." },
+
+    { "title": "menuItemStyle", 
+      "concept": "The custom CSS styles that should be applied to the menu item. Only applies to bot that are being shown in the menu portal. This is useful for positioning and styling the item in ways that are not possible using normal tags. Overridden by conflicting properties like #color or #labelColor. When setting this tag via the sheet, it is useful to utilize DNA tags to ensure that the resulting value is considered an object." },
+
+    { "title": "menuItemLabelStyle", 
+      "concept": "The custom CSS styles that should be applied to the menu item label. Only applies to bots that are being shown in the menu portal. This is useful for styling the label in ways that are not possible using normal tags. Overrides conflicting properties like #color or #labelColor." },
+
     { "title": "", 
       "concept": "" },
-    
+
     { "title": "", 
       "concept": "" },
-    
+
+    { "title": "", 
+      "concept": "" },
+
+    { "title": "", 
+      "concept": "" },
   ]
 }
