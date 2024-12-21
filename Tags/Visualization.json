@@ -164,7 +164,10 @@
 
     { "title": "minLODThreshold", 
       "concept": "The maximum percentage of the screen that the bot form should tak up in order to enter the minimum Level-Of-Detail. When the minimum LOD is entered the @onMinLODEnter listener is triggered. When the minimum LOD is exited the @onMinLODExit listener is triggered." },
-
+    
+    { "title": "transformer", 
+      "concept": "The Id of the bot that should trnasform this bot in the bot and miniGridPortals. When the transformer bot and this bot are in the same dimension, this bot will inherit the position and rotation of the transformer bot. When set on a portal bot (like gridPortalBot), this will transform the portal camera by the specified bot." },
+    
     { "title": "menuItemStyle", 
       "concept": "The custom CSS styles that should be applied to the menu item. Only applies to bot that are being shown in the menu portal. This is useful for positioning and styling the item in ways that are not possible using normal tags. Overridden by conflicting properties like #color or #labelColor. When setting this tag via the sheet, it is useful to utilize DNA tags to ensure that the resulting value is considered an object." },
 
@@ -181,6 +184,6 @@
       "concept": "The text that has been entered in the menu item's input box. Only has an effect on menu items that ahve #form set to input. This tag will also be updated in the tempLocal space when the user types in the input box." },
 
     { "title": "MenuItemShowSubmitWhenEmpty", 
-      "concept": "" },
+      "concept": "Whether to show the submit button on input menu items even if the input box is empty. Only has an effect on menu items that have £form set to input." },
   ]
 }
