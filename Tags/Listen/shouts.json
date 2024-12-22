@@ -132,34 +132,34 @@
     {"title":"@onAnyMaxLODEnter",
     "concept":"A shout that is sent whenever a bot enters its maximum Level-Of-Detail. Only sent for bots that have one of @onMaxLODEnter, @onMaxLODExit, @onMinLODEnter, @onMinLODExit, #maxLODThreshold or #minLODThreshold specified."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyMinLODEnter",
+    "concept":"A shout that is sent whenever a bot enter its minimum Level-Of-Detail. Only sent for bots that have one of @onMaxLODEnter, @onMaxLODExit, @onMinLODEnter, @onMinLODExit, #maxLODThreshold or #minLODThreshold specified."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyMaxLODExit",
+    "concept":"A shout that is sent whenever a bot exits its maximum Level-Of-Detail. Only sent for bots that have one of @onMaxLODEnter, @onMaxLODExit, @onMinLODEnter, @onMinLODExit, #maxLODThreshold or #minLODThreshold specified."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyMinLODExit",
+    "concept":"A shout that is sent whenever a bot exits its minimum Level-Of-Detail. Only sent for bots that have one of @onMaxLODEnter, @onMaxLODExit, @onMinLODEnter, @onMinLODExit, #maxLODThreshold, or #miinLODThreshold specified."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyFocusEnter",
+    "concept":"A shout that is sent whenever a bot starts being focused by the player. Focus is when the bot is in the center of the screen. Only sent if #focusable is true."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyFocusExit",
+    "concept":"A shout that is sent whenever a bot stops being focused by the player. Focus is when the bot is in the center of the screen."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onBeginAudioRecording",
+    "concept":"A shout that is sent whenever audio recording starts. There are no arguments with this listener."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAudioChunk",
+    "concept":"A shout that is sent whenever a piece of audio is prepared for streaming. Only called when os.beginAudioRecording(options?) is called with stream set to true."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onEndAudioRecording",
+    "concept":"A shout that is sent whenever audio recording stops. If the data was streamed, that is null. Otherwise, that is a Blob object that contains the recorded data."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onEnterAR",
+    "concept":"A shout that is sent whenever the device enters augmented reality mode. You can enter AR by calling os.enableAR(options?)."},
     
-    {"title":"",
+    {"title":"@onExitAR",
     "concept":""},
     
     {"title":"",
