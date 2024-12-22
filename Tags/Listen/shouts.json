@@ -1,64 +1,225 @@
 {
   "data":[
     {"title":"@onAnycreate",
-  "concept":"A shout that is sent to all bots when a bot is created. Sent immediately after @onCreate is sent."},
+    "concept":"A shout that is sent to all bots when a bot is created. Sent immediately after @onCreate is sent."},
+  
     {"title":"@onAnyBotClicked",
-  "concept":"A shout that is sent to all bots when a bot is clicked."},
+    "concept":"A shout that is sent to all bots when a bot is clicked."},
+    
     {"title":"@onAnyBotPointerEnter",
-  "concept":"A shout that is sent to all bots when the mouse cursor starts to hover over a bot."},
+    "concept":"A shout that is sent to all bots when the mouse cursor starts to hover over a bot."},
+    
     {"title":"@onAnyBotPointerExit",
-  "concept":"A shout that is sent to all bots when the mouse cursor stops hovering over a bot."},
+    "concept":"A shout that is sent to all bots when the mouse cursor stops hovering over a bot."},
+    
     {"title":"@onAnyBotPointerDown",
-  "concept":"A shout that is sent to all bots when the user starts clicking a bot."},
+    "concept":"A shout that is sent to all bots when the user starts clicking a bot."},
+    
     {"title":"@onAnyBotPointerUp",
-  "concept":"A shout that is sent to all bots when the user stops clicking a bot."},
+    "concept":"A shout that is sent to all bots when the user stops clicking a bot."},
+    
     {"title":"@onChat",
-  "concept":"A shout that is sent to all bots when the player sends a chat message. Chat messages can be sent when the player presses the Enter key while writing a message or by clicking/tapping the 'Send Message' button to the right of the chat bar."},
+    "concept":"A shout that is sent to all bots when the player sends a chat message. Chat messages can be sent when the player presses the Enter key while writing a message or by clicking/tapping the 'Send Message' button to the right of the chat bar."},
+    
     {"title":"@onChatTyping",
-  "concept":"A shout that is sent to all bots when the player changes the text in the chat bar. Only triggered when the chat bar is visible."},
+    "concept":"A shout that is sent to all bots when the player changes the text in the chat bar. Only triggered when the chat bar is visible."},
+    
     {"title":"@onFileUpload",
-  "concept":"A shout that is sent to all bots when the user drags a file into the window."},
+    "concept":"A shout that is sent to all bots when the user drags a file into the window."},
+    
     {"title":"@onGridClick",
-  "concept":"A shout that is sent to all bots when the user clicks on empty space."},
+    "concept":"A shout that is sent to all bots when the user clicks on empty space."},
+    
     {"title":"@onGridDown",
-  "concept":"A shout that is sent to all bots when the user starts clicking on empty space."},
+    "concept":"A shout that is sent to all bots when the user starts clicking on empty space."},
+    
     {"title":"@onGridUp",
-  "concept":"A shout that is sent to all bots when the user stops clicking on empty space."},
+    "concept":"A shout that is sent to all bots when the user stops clicking on empty space."},
+    
     {"title":"@onPortalChanged",
-  "concept":"A shout that is sent to all bots when a portal changes on the config bot."},
+    "concept":"A shout that is sent to all bots when a portal changes on the config bot."},
+    
     {"title":"@onBarcodeScanned",
-  "concept":"A shout that is sent to all bots when the player scans a barcode."},
+    "concept":"A shout that is sent to all bots when the player scans a barcode."},
+    
     {"title":"@onBarcodeScannerOpened",
-  "concept":"A shout that is sent to all bots when the barcode scanner is opened."},
+    "concept":"A shout that is sent to all bots when the barcode scanner is opened."},
+    
     {"title":"@onBarcodeScannerClosed",
-  "concept":"A shout that is sent to all bots when the barcode scanner is closed."},
-  {"title":"@onQRCodeScanned",
-  "concept":"A shout that is sent to all bots when a QR Code is scanned."},
+    "concept":"A shout that is sent to all bots when the barcode scanner is closed."},
+    
+    {"title":"@onQRCodeScanned",
+    "concept":"A shout that is sent to all bots when a QR Code is scanned."},
+    
     {"title":"@onQRCodeScannerOpened",
-  "concept":"A shout that is sent to all bots when the QR Code Scanner is opened."},
+    "concept":"A shout that is sent to all bots when the QR Code Scanner is opened."},
+    
     {"title":"@onQRCodeScannerClosed",
-  "concept":"A shout that is sent to all bots when the QR Code Scanner is closed."},
+    "concept":"A shout that is sent to all bots when the QR Code Scanner is closed."},
+    
     {"title":"@onImageClassified",
-  "concept":"A shout that is sent to all bots when an image has been classified."},
+    "concept":"A shout that is sent to all bots when an image has been classified."},
+    
     {"title":"@onImageClassifierOpened",
-  "concept":"A shout that is sent to all bots when the image classifier is opened."},
+    "concept":"A shout that is sent to all bots when the image classifier is opened."},
+    
+    {"title":"@onImageClassifierClosed",
+    "concept":"A shout that is sent to all bots when the image classfier is closed."},
+    
+    {"title":"@onPhotoCaptured",
+    "concept":"A shout that is sent to all bots when a picture has been captured from the photo camera."},
+    
+    {"title":"@onPhotoCameraOpened",
+    "concept":"A shout that is sent to all bots when the photo camera is opened."},
+    
+    {"title":"@onPhotoCameraClosed",
+    "concept":"A shout that is sent to all bots when the photo camera is closed."},
+    
+    {"title":"@onTapCode",
+    "concept":"A shout that is sent to all bots whenever a 4-digit tap code is entered."},
+    
+    {"title":"@onKeyDown",
+    "concept":"A shout that is sent to all bots whenever the user starts pressing a key."},
+    
+    {"title":"@onKeyUp",
+    "concept":"A shout that is sent to all bots whenever the user stops pressing a key."},
+    
+    {"title":"@onKeyRepeat",
+    "concept":"A shout that is sent to all bots whenever the user holds down a key and it automatically fires 'repeated key event'. (This is like when you hold down the 'a' key and then the computer starts continually typing 'a' characters until you stop holding the key"},
+    
+    {"title":"@onInstJoined",
+    "concept":"A shout that is sent when a inst is loaded. An inst is considered loaded once all the bots in each space have been added (See #onBotAdded). Sent to every inst that is loaded."},
+    
+    {"title":"@onInstLeave",
+    "concept":"A shout that is sent when a inst is unloaded. Sent to every inst that is loaded."},
+    
+    {"title":"@onInstStreaming",
+    "concept":"A shout that is sent when an inst is connected and fully synced. Note that this can occur multiple times throughout the lifetime of a session because the player can lose and regain its connection to the inst. Sent to every inst that is loaded."},
+    
     {"title":"",
-  "concept":""},
+    "concept":""},
+    
     {"title":"",
-  "concept":""},
+    "concept":""},
+    
     {"title":"",
-  "concept":""},
+    "concept":""},
+    
     {"title":"",
-  "concept":""},
+    "concept":""},
+    
     {"title":"",
-  "concept":""},
+    "concept":""},
+    
     {"title":"",
-  "concept":""},
+    "concept":""},
+    
     {"title":"",
-  "concept":""},
+    "concept":""},
+    
     {"title":"",
-  "concept":""},
+    "concept":""},
+    
     {"title":"",
-  "concept":""}
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
+    
+    {"title":"",
+    "concept":""},
   ]
 }
