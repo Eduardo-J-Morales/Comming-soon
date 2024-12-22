@@ -94,43 +94,43 @@
     "concept":"A shout that is sent when a inst is unloaded. Sent to every inst that is loaded."},
     
     {"title":"@onInstStreaming",
-    "concept":"A shout that is sent when an inst is connected and fully synced. Note that this can occur multiple times throughout the lifetime of a session because the player can lose and regain its connection to the inst. Sent to every inst that is loaded."},
+    "concept":"A shout that is sent when a inst is connected and fully synced. Note that this can occur multiple times throughout the lifetime of a session because the player can lose and reegain its connection to the inst. Sent to every inst that is loaded."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onInstStreamLost",
+    "concept":"A shout that is sent when a inst has been temporarily disconnected from the server. Note that this can occur multiple times trhoughout the lifetime of a session because the player can lose and regain its connection to the inst Sent to every inst that is loaded."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onCheckout",
+    "concept":"A shout that is sent when the user submits their credit card info to purchase something."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onPaste",
+    "concept":"A shout that is sent when some text is pasted into the server. This happens by pressing Ctrl+v or Cmd+V while something is in your clipboard."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onPaymentSuccessful",
+    "concept":"A shout that is sent when payment has been approved for a checkout."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onPaymentFailed",
+    "concept":"A shout that is sent when payment has been rejected for a checkout."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyBotDrag",
+    "concept":"A shout that is sent whenever a bot starts to be dragged."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyBotDragging",
+    "concept":"A shout that is sent whenever a bot would be moved while dragging. Note that this whisper is only sent for drag operations that have called os.enableCustomDraggin()."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyBotDrop",
+    "concept":"A shout that is sent whenever a bot is dropped after being dragged."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyBotDropEnter",
+    "concept":"A shout that is sent whenever a bot is dragged onto another bot."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyBotDropExit",
+    "concept":"A shout that is sent whenever a bot is dragged off of another bot."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyListen",
+    "concept":"A shout that is sent whenever a whisper or shout is issued."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyMaxLODEnter",
+    "concept":"A shout that is sent whenever a bot enters its maximum Level-Of-Detail. Only sent for bots that have one of @onMaxLODEnter, @onMaxLODExit, @onMinLODEnter, @onMinLODExit, #maxLODThreshold or #minLODThreshold specified."},
     
     {"title":"",
     "concept":""},
