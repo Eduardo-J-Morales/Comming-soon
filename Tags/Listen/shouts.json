@@ -180,20 +180,20 @@
     {"title":"@onSheetTagClick",
     "concept":"A shout that is sent when a tag name is clicked in the sheet portal."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onSheetBotClick",
+    "concept":"A shout that is sent when a Bot is clicked in the sheet portal."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onSheetBotIDClick",
+    "concept":"A shout that is sent when a Bot ID is clicked in the sheet portal."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onMeetLoaded",
+    "concept":"A shout that is sent when the meet portal finishes loading. Note that when this shout is sent, the user may not actually be in the meeting. They simply be in the meeting waiting area and not actually in the meeting. If you want notification when the user has become a participant in a meeting, use @onMeetEntered. It is safe to run os.meetCommand() after this shout has been received."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onMeetLeave",
+    "concept":"A shout that is sent when the meet portal is closed."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onMeetEntered",
+    "concept":"A shout"},
     
     {"title":"",
     "concept":""},
