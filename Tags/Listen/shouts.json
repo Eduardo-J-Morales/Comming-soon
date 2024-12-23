@@ -157,28 +157,28 @@
     "concept":"A shout that is sent whenever audio recording stops. If the data was streamed, that is null. Otherwise, that is a Blob object that contains the recorded data."},
     
     {"title":"@onEnterAR",
-    "concept":"A shout that is sent whenever the device enters augmented reality mode. You can enter AR by calling os.enableAR(options?)."},
+    "concept":"A shout that is sent whenever the device enters augmented reality mode. You can enter AR by calling os.enableAR(options?). There are no arguments with this listener."},
     
     {"title":"@onExitAR",
-    "concept":""},
+    "concept":"A shout that is sent whenever the device exits augmented reality mode. You can exit AR by calling os.disableAR(). There are no arguments with this listener."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onEnterVR",
+    "concept":"A shout that is sent whenever the device enters virtual reality mode. You can exit VR by calling os.enterVR(options?). There are no arguments with this listener."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onExitVR",
+    "concept":"A shout that is sent whenever the device exits virtual reality mode. You can exit VR by calling os.disableVR(). There are no arguments with this listener."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onWebhook",
+    "concept":"A shout that is sent whenever a webhook is received. If data is returned, the first result will be used as the HTTP response. The headers property is an object that specifies the HTTP headers that should be set on the response. Each property is a header name and the value is the value set on the header. The status property is the numerical status code that should be set on the response. If omitted, then status code 200 will be used. The data property is the data that should be included in the response body."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyAction",
+    "concept":"A shout that is sent whenever an action happens."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onSerialData",
+    "concept":"A shout that is sent whenever a stream data is received."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onSheetTagClick",
+    "concept":"A shout that is sent when a tag name is clicked in the sheet portal."},
     
     {"title":"",
     "concept":""},
