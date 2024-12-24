@@ -207,7 +207,7 @@
     {"title":"@onRemoteJoined",
     "concept":"A shout that is run on every other remote device when it joins the current server. Since this shout is run on every device, you should be careful about performing duplicate actions. When i doubt, elect a remote to perform all actions that should only be executed once."},
     
-    {"title":"",
+    {"title":"d",
     "concept":""},
     
     {"title":"",
