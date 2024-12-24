@@ -193,19 +193,19 @@
     "concept":"A shout that is sent when the meet portal is closed."},
     
     {"title":"@onMeetEntered",
-    "concept":"A shout"},
+    "concept":"A shout that is sent when the user enters a meet portal meeting. Unlike @onMeetLoaded, this listener is triggered only when the user becomes an active participant in a meeting. That is, after they've clicked the 'join' button to enter the meeting."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onMeetExited",
+    "concept":"A shout that is sent when the user exits a meet portal meeting. Unlike @onMeetLeave, this listener may be triggered if the user exits a breakout room and re-enters the main meeting room."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onMeetRecordingLinkAvailable",
+    "concept":"A shout that is sent when a meeting recording link is available."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onRemoteData",
+    "concept":"A shout that is sent whenever a message is received from another remote device."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onRemoteJoined",
+    "concept":"A shout that is run on every other remote device when it joins the current server. Since this shout is run on every device, you should be careful about performing duplicate actions. When i doubt, elect a remote to perform all actions that should only be executed once."},
     
     {"title":"",
     "concept":""},
