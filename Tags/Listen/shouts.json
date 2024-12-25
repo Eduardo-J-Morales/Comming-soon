@@ -270,31 +270,19 @@
     {"title":"@onSpaceMaxSizeReached",
     "concept":"A shout that is sent to all bots when a space rejects persistent storage of one or more bot changes due to exceeding the storage limits of the space. There are a several consequences to this: 1. Some bot/tag changes were not persistently stored in the space. 2. Those same bot/tag changes will still be available on the machine that the change was created on, as long as the browser tab has not been reloaded. 3. Future changes to that space may or may not be persisted, depending on whether the individual changes would cause the space to exceed its storage limit. As a result, large changes are more likely to be rejected than small changes. As such, if this shout occurs in an inst that you are working in, it is highly recommended to make a manual backup so that you don't loose any data."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onSpaceRateLimitExceeded",
+    "concept":"A shout that is sent to all bots when a space rejects a change because it would exceed the rate limit for the space. Rate limits are used to prevent too many changed at one time from overloading the system, and they only apply to the shared space."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onCollaborationEnabled",
+    "concept":"A shout that is sent to all bots when collaboration becomes enabled for the current inst."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onAllowCollaborationUpgrade",
+    "concept":"A shout that is sent to all bots when os.enableCollaboration() is able to be called."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onDisallowCollaborationUpgrade",
+    "concept":"A shout that is sent to all bots when os.enableCollaboration() is no longer able to be called."},
 
-    {"title":"",
-    "concept":""},
-
-    {"title":"",
-    "concept":""},
-
-    {"title":"",
-    "concept":""},
-
-    {"title":"",
-    "concept":""},
-
-    {"title":"",
-    "concept":""}
+    {"title":"@onResolvedModule",
+    "concept":"A shout that is sent to all bots when a module is being resolved. Used to resolve statements like import { foo } from 'myCustomModule'. In the case that multiple bots are listening for this shout, the first bot to resolve a non-null value will be used. If none of the bots return a valid value, then the default mechanism for resolving modules will be used. The default mechanism for resolving modules is as follows: 1. Scripts based on system tag. You can import exported functions and variables from any script based on the system tag of its bot. For example, import {abc} from 'example.system.tag' can be used to import the abc variable or function from the bot with the example.system system and the tag tag. 2. URLs. The URLs can be imported. For example, import { sortBy } from 'https://esm.run/lodash-es'; imports the sortby function from lodash-es module provided by https://esm.run."}
   ]
 }
