@@ -216,23 +216,23 @@
     {"title":"@onAnyBotsRemoved",
     "concept":"A shout that is sent when a list of bots is removed from the current server. Unlike @onDestroy, this listen tag is triggered whenever the bots have been removed from the current device's server, even if the bots were not destroyed. An example of this happening is when another player disconnects. Even though their config bots were not destroyed, they still need to be removed from the server. Note that this listen tag is triggered after executing scripts have finished running. This measn that if a script updates the same tag multiple times, @onAnyBotsRemoved will still only be triggered once. This is in contrast to @onCreate which is triggered immediately after the bot has been created. Also note that this listen tag can be triggered before @onInstJoined. This means that it is possible for bots in other spaces to not be available when this listener is triggered."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyBotsChanged",
+    "concept":"A shout that is sent when one or more tags are changed on a list of bots in the current server. This listen tag is triggered whenever the bots have been updated in the current device's server, even if the bots were not updated locally. An example of this happening is when another player changes a tag in the sheet portal. Even though the change was made on their device, it will show up on the current device. Note that this listen tag is triggered after executing scripts have finished running. This means that if a script updates the same tag multiple times, @onAnyBotsChanged will still only be triggered once. This is in contrast to @onCreate which is triggered immediately after the bot has been created. Also note that this listen tag can be triggered before @onInstJoined. This means that it is possible for bots in other spaces to not be available when this listener is triggered."},
     
-    {"title":"",
-    "concept":""},
+    {"title":"@onError",
+    "concept":"A shout that is sent when an unhandled error occurs in a listen tag. Error can occur for many reasons, but common ones include data being uunexpectedly missing (e.g. 'Cannot read property xyz of undefined') or invalid usage (e.g. 'xyz is not a function'). Note that errors which occur in @onError listen tag will not trigger further onError calls. To view those errors, open the developer tools console."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onRoomJoined",
+    "concept":"A shout that is sent whenever a multimedia chat room is joined by using os.joinRoom(roomName, options?)."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onRoomLeave",
+    "concept":"A shout that is sent whenever a multimedia chat room is exited by using os.leaveRoom(roomName, options?)."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onRoomStreaming",
+    "concept":"A shout that is sent whenever the user becomes connected to a multimedia chat room. Work similarly to @onInstStreaming except that it is only sent for chat rooms."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onRoomStreamLost",
+    "concept":"A "},
 
     {"title":"",
     "concept":""},
