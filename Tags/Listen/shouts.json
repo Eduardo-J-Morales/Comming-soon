@@ -252,23 +252,23 @@
     {"title":"@onRoomOptionsChanged",
     "concept":"A shout that is sent whenever the local room options have been changed. Useful for detecting if the user's camera feed or microphone has been muted/unmuted."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyFormAnimationStarted",
+    "concept":"A shout that is sent to all bots whenever an animation is started via the os.startFormAnimation(botRoBots, nameOrIndex, options?) function."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyFormAnimationStopped",
+    "concept":"A shout that is sent to all bots whenever an animation is stopped via the os.stopFormAnimation(botOrBots, options?) function."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyFormAnimationLooped",
+    "concept":"A shout that is sent to all bots whenever an animation finishes and starts to repeat based on the loop rules given os.startFormAnimation(botOrBots, nameOrIndex, options?) in the options."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onAnyFormAnimationFinished",
+    "concept":"A shout that is sent to all bots whenever an animation that was started by os.startFormAnimation(botOrBots, nameOrIndex, options?) stops. This shout is sent both for when the animation is manually stopped (by calling os.stopFormAnimation(botOrBots, options?)) and also when it stops because it shouldn't repeat."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onDocumentAvailable",
+    "concept":"A shout that is sent to all bots when the Document object is made available to scripts."},
 
-    {"title":"",
-    "concept":""},
+    {"title":"@onSpaceMaxSizeReached",
+    "concept":"A shout that is sent to all bots when a space rejects persistent storage of one or more bot changes due to exceeding the storage limits of the space. There are a several consequences to this: 1. Some bot/tag changes were not persistently stored in the space. 2. Those same bot/tag changes will still be available on the machine that the change was created on, as long as the browser tab has not been reloaded. 3. Future changes to that space may or may not be persisted, depending on whether the individual changes would cause the space to exceed its storage limit. As a result, large changes are more likely to be rejected than small changes. As such, if this shout occurs in an inst that you are working in, it is highly recommended to make a manual backup so that you don't loose any data."},
 
     {"title":"",
     "concept":""},
