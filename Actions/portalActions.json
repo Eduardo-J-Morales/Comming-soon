@@ -1,1 +1,49 @@
+{
+  "data":[
+    {"title":"os.closeCircleWipe(options?)",
+      "concept":"Causes a circular wipe animationi to close around the screen. This can be used to cover the grid portal while transitioning between scenes. Returns a promise that resolves when the animation has finished running. The promise will throw an exception if os.openCircleW9pe(options) is called while the animation is running. The first parameter is optional and is a Partial<OpenCircleWipeOptions> and is the options that should be used for the effect."},
 
+    {"title":"os.openCircleWipe(options?)",
+      "concept":"Causes the circular wipe animation to open around the screen. This can be used to reveal the grid portal after transitioning between screens. Returns a promise that resolves when the animation has finished running. The first parameter is optional and is a Partial<OpenCircleWipeOptions> and is the options that should be used for the effect."},
+
+    {"title":"os.getCurrentDimension()",
+      "concept":"Gets the dimension that is loaded into the #gridPortal portal. This function behaves exactly like os.getPortalDimension(portal) when given 'gridPortal'."},
+
+    {"title":"os.getCurrentInst()",
+      "concept":"Gets the inst that is loaded."},
+
+    {"title":"os.getCurrentInstRecord()",
+      "concept":"Gets the record that the inst was loaded from. Null if the inst is local or public."},
+
+    {"title":"os.getDimensionalDepth(dimension:string)",
+      "concept":"Gets the distance that the player bot is from the given dimension. Returns 0 if the player bot is in the dimension, 1 if the dimension is in a portal, and -1 if neither are true. The first parameter is a string and is the dimension to check for."},
+
+    {"title":"os.getMenuDimension()",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+    
+  ]
+}
