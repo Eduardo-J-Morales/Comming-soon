@@ -72,11 +72,11 @@
     {"title":"os.getFocusPoint(portal)",
       "concept":"Gets the 3D position that the player's camera is focusing on in the given portal. This is the same point that is highlighted when #portalShowFocusPoint is enabled for a portal. The first parameter is a ('grid' | 'miniGrid') and is the portal that the camera focus point should be retrieved for."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"os.getPointerDirection(pointer)",
+      "concept":"Gets the direction that the given pointer in. Can be combined with math.intersectPlane(origin, direction, planeNormal, planeOrigin) to find where on the ground the pointer is pointing. The first parameter is a ('left' | 'right' | 'mouse') and is the pointer that the direction should be retrieved for."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"os.getPointerPosition(pointer)",
+      "concept":"Gets the position that the given pointer is at. The first parameter is a ('left' | 'right' | 'mouse') and is the pointer that the position should be retrieved for."},
 
     {"title":"",
       "concept":""},
