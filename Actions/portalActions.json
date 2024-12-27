@@ -19,6 +19,24 @@
       "concept":"Gets the distance that the player bot is from the given dimension. Returns 0 if the player bot is in the dimension, 1 if the dimension is in a portal, and -1 if neither are true. The first parameter is a string and is the dimension to check for."},
 
     {"title":"os.getMenuDimension()",
+      "concept":"Gets the dimension that is loaded into the #menuPortal portal. This function behaves exactly like os.getPortalDimension(portal) when given 'menuPortal'."},
+
+    {"title":"os.getMiniPortalDimension()",
+      "concept":"Gets the dimension that is loaded into the #miniGridPortal portal. This function behaves exactly like os.getPortalDimension(portal) when given 'miniGridPortal'."},
+
+    {"title":"os.getPortalDimension(portal)",
+      "concept":"Gets the dimension that is loaded into the given portal. If no dimension is loaded then null is returned. The first parameter is a string and is the portal that the dimension should be retrieved for."},
+
+    {"title":"os.hasBotInMiniPortal(bots)",
+      "concept":"Determines if the given bot is in the dimension that is currently loaded into the #miniGridPortal portal. The first parameter is (Bot | Bot[]) and is the bot or bots that should be checked."},
+
+    {"title":"os.inSheet()",
+      "concept":"Gets whether the player is viewing the sheetPortal."},
+
+    {"title":"os.isInDimension(dimension)",
+      "concept":"Gets whether the given dimension is loaded into the #gridPortal portal. The first parameter is a string and is the dimension to check for."},
+
+    {"title":"os.exitFullScreenMode()",
       "concept":""},
 
     {"title":"",
@@ -26,24 +44,5 @@
 
     {"title":"",
       "concept":""},
-
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
-    
   ]
 }
