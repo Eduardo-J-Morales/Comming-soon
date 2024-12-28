@@ -93,8 +93,8 @@
     {"title":"os.calculateViewportCoordinatesFromPosition(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), position: Vector3): Promise<Vector2>",
       "concept":"Calculates the viewport coordinates that the given position would be projected to in the camera of the given portal. Returns a promise that resolves with the calculated viewport coordinates. Viewport coordinates locate a specific point on the image that the camera produces. (x: 0, y: 0) represents the center of the camera while (x: -1, y: -1) represents the lower left corner and (x: 1, y: 1) represents the upper right corner. This function is useful for converting a position in the portal to a position on the camera viewport (screen position, but the location is not in pixels). The first parameter is a ('map' | 'grid' | 'miniGrid' | 'miniGrid' | 'miniMap') and is the name of the portal that should be tested. The second parameter is a Vector3 and is the 3D position that should be projected to the viewport."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"os.calculatViewportCoordinatesFromScreenCoordinates(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), coordinates: Point2D): Promise<Vector2>",
+      "concept":"Calculates the viewport coordinates that the given screen coordinates map to on the camera. Returns a promise that resolves with the calculated viewport coordinates. Screen coordinates are in pixels and are relative to the top-left corner of the screen. Viewport coordinates locate a specific point on the image that the camera produces.(x: 0, y: 0) represents the center of the camera while (x: -1, y: -1) represents the lower left corner and (x: 1, y: 1) represents the upper right corner. The first parameter is a ('map' | 'grid' | 'miniGrid' | 'miniMap') and is the name of the portal that should be tested. The second parameter is a Point2D and is the 2D screen coordinates that should be converted to viewport coordinates."},
 
     {"title":"",
       "concept":""},
