@@ -100,7 +100,7 @@
       "concept":"Finds the list of bots that are in the given portal and are intersected by a ray starting at the given origin position and traveling in the given direction. Returns a promise that resolves with information about the intersected bots. The first parameter is a ('map' | 'grid' | 'miniGrid' | 'miniMap') and is the name of the portal that should be tested. The second parameter is a Vector3 and is the 3D position that the ray should start at. The third parameter is a Vector3 and is the 3D direction that the ray should travel along."},
 
     {"title":"os.raycastFromCamera(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), viewportCoordinates: Vector2): Promise<RaycastResult>",
-      "concept":"Finds the list of bots that are in the given portal and are intersected by a ray starting at the portal camera and traveling along a path emanating from the given viewport position. Returns a promise that resolves with information about the intersected bots. The first parameters is a ('map' | 'grid' | 'miniGrid' | 'miniMap') and is the portal that should be tested. The second parameter is a Vector2 and is the 2D viewport position that the ray should start at."},
+      "concept":"Finds the list of bots that are in the given portal and are "},
 
     {"title":"",
       "concept":""},
