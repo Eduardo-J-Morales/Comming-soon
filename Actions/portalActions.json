@@ -90,8 +90,8 @@
     {"title":"os.calculateRayFromCamera(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), viewportCoordinates: Vector2): Promise<RaycastRay>)",
       "concept":"Calculates the ray that starts at the given portal camera and travels along the path emanating from the given viewport position. Returns a promise that resolves with information about the calculated ray. The first parameter is a ('map' | 'grid' | 'miniGrid' | 'miniMap') and is the name of the portal that should be tested. The second parameter is a Vector2 and is the 2D viewport position that the ray should start at. Viewport positions locate a specific point on the image that the camera produces. (x: 0, y: 0) represents the center of the camera while (x: -1, y: -1) represents the lower left corner and (x: 1, y: 1) represents the upper right corner."},
 
-    {"title":"os.calculateScreenCoordinatesFromViewportCoordinates(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), coordinates: Point2D): Promise<Vector2>",
-      "concept":""},
+    {"title":"os.calculateViewportCoordinatesFromPosition(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), position: Vector3): Promise<Vector2>",
+      "concept":"Calculates the viewport coordinates that the given position would be projected to in the camera of the given portal. Returns a promise that resolves with the calculated viewport coordinates. Viewport coordinates locate a specific point on the image that the camera produces. (x: 0, y: 0) represents the center of the camera while (x: -1, y: -1) represents the lower left corner and (x: 1, y: 1) represents the upper right corner. This function is useful for converting a position in the portal to a position on the camera viewport (screen position, but the location is not in pixels). The first parameter is a ('map' | 'grid' | 'miniGrid' | 'miniGrid' | 'miniMap') and is the name of the portal that should be tested. The second parameter is a Vector3 and is the 3D position that should be projected to the viewport."},
 
     {"title":"",
       "concept":""},
