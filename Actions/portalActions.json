@@ -96,11 +96,11 @@
     {"title":"os.calculatViewportCoordinatesFromScreenCoordinates(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), coordinates: Point2D): Promise<Vector2>",
       "concept":"Calculates the viewport coordinates that the given screen coordinates map to on the camera. Returns a promise that resolves with the calculated viewport coordinates. Screen coordinates are in pixels and are relative to the top-left corner of the screen. Viewport coordinates locate a specific point on the image that the camera produces.(x: 0, y: 0) represents the center of the camera while (x: -1, y: -1) represents the lower left corner and (x: 1, y: 1) represents the upper right corner. The first parameter is a ('map' | 'grid' | 'miniGrid' | 'miniMap') and is the name of the portal that should be tested. The second parameter is a Point2D and is the 2D screen coordinates that should be converted to viewport coordinates."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"os.raycast(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), origin: Vector3, direction: Vector3): Promise<RaycastResult>",
+      "concept":"Finds the list of bots that are in the given portal and are intersected by a ray starting at the given origin position and traveling in the given direction. Returns a promise that resolves with information about the intersected bots. The first parameter is a ('map' | 'grid' | 'miniGrid' | 'miniMap') and is the name of the portal that should be tested. The second parameter is a Vector3 and is the 3D position that the ray should start at. The third parameter is a Vector3 and is the 3D direction that the ray should travel along."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"os.raycastFromCamera(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), viewportCoordinates: Vector2): Promise<RaycastResult>",
+      "concept":"Finds the list of bots that are in the given portal and are intersected by a ray starting at the portal camera and traveling along a path emanating from the given viewport position. Returns a promise that resolves with information about the intersected bots. The first parameters is a ('map' | 'grid' | 'miniGrid' | 'miniMap') and is the portal that should be tested. The second parameter is a Vector2 and is the 2D viewport position that the ray should start at."},
 
     {"title":"",
       "concept":""},
