@@ -78,13 +78,13 @@
     {"title":"os.getPointerPosition(pointer)",
       "concept":"Gets the position that the given pointer is at. The first parameter is a ('left' | 'right' | 'mouse') and is the pointer that the position should be retrieved for."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"os.getPointerRotattion(pointer)",
+      "concept":"Gets the rotaiton (in euler angles) that the given pointer is at. The first parameter is a ('left' | 'right' | 'mouse') and is the pointer that the rotation should be retrieved for."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"os.disablePointOfView()",
+      "concept":"Disables Point-of-View mode on the device. This will return the camera to its original position, set the camera type back to what it was before, and change the camera controls to the defaults."},
 
-    {"title":"",
+    {"title":"os.enablePointOfView(center)",
       "concept":""},
 
     {"title":"",
