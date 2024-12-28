@@ -1,96 +1,96 @@
 {
   "data":[
-    {"title":"os.closeCircleWipe(options?)",
+    {"title":"os.closeCircleWipe(options?: Partial<OpenCircleWipeOptions>): Promise<void>",
       "concept":"Causes a circular wipe animation to close around the screen. This can be used to cover the grid portal while transitioning between scenes. Returns a promise that resolves when the animation has finished running. The promise will throw an exception if os.openCircleWipe(options) is called while the animation is running. The first parameter is optional and is a Partial<OpenCircleWipeOptions> and is the options that should be used for the effect."},
 
-    {"title":"os.openCircleWipe(options?)",
+    {"title":"os.openCircleWipe(options?: Partial<OpenCircleWipeOptions>): Promise<void>",
       "concept":"Causes the circular wipe animation to open around the screen. This can be used to reveal the grid portal after transitioning between screens. Returns a promise that resolves when the animation has finished running. The first parameter is optional and is a Partial<OpenCircleWipeOptions> and is the options that should be used for the effect."},
 
-    {"title":"os.getCurrentDimension()",
+    {"title":"os.getCurrentDimension(): string",
       "concept":"Gets the dimension that is loaded into the #gridPortal portal. This function behaves exactly like os.getPortalDimension(portal) when given 'gridPortal'."},
 
-    {"title":"os.getCurrentInst()",
+    {"title":"os.getCurrentInst(): string",
       "concept":"Gets the inst that is loaded."},
 
-    {"title":"os.getCurrentInstRecord()",
+    {"title":"os.getCurrentInstRecord(): (string | null)",
       "concept":"Gets the record that the inst was loaded from. Null if the inst is local or public."},
 
-    {"title":"os.getDimensionalDepth(dimension:string)",
+    {"title":"os.getDimensionalDepth(dimension: string): number",
       "concept":"Gets the distance that the player bot is from the given dimension. Returns 0 if the player bot is in the dimension, 1 if the dimension is in a portal, and -1 if neither are true. The first parameter is a string and is the dimension to check for."},
 
-    {"title":"os.getMenuDimension()",
+    {"title":"os.getMenuDimension(): string",
       "concept":"Gets the dimension that is loaded into the #menuPortal portal. This function behaves exactly like os.getPortalDimension(portal) when given 'menuPortal'."},
 
-    {"title":"os.getMiniPortalDimension()",
+    {"title":"os.getMiniPortalDimension(): string",
       "concept":"Gets the dimension that is loaded into the #miniGridPortal portal. This function behaves exactly like os.getPortalDimension(portal) when given 'miniGridPortal'."},
 
-    {"title":"os.getPortalDimension(portal)",
+    {"title":"os.getPortalDimension(portal: string): string",
       "concept":"Gets the dimension that is loaded into the given portal. If no dimension is loaded then null is returned. The first parameter is a string and is the portal that the dimension should be retrieved for."},
 
-    {"title":"os.hasBotInMiniPortal(bots)",
+    {"title":"oos.hasBotInMiniPortal(bots: (Bot | Bot[])): boolean",
       "concept":"Determines if the given bot is in the dimension that is currently loaded into the #miniGridPortal portal. The first parameter is (Bot | Bot[]) and is the bot or bots that should be checked."},
 
-    {"title":"os.inSheet()",
+    {"title":"os.inSheet(): boolean",
       "concept":"Gets whether the player is viewing the sheetPortal."},
 
-    {"title":"os.isInDimension(dimension)",
+    {"title":"os.isInDimension(dimension: string): boolean",
       "concept":"Gets whether the given dimension is loaded into the #gridPortal portal. The first parameter is a string and is the dimension to check for."},
 
-    {"title":"os.exitFullscreenMode()",
+    {"title":"os.exitFullscreenMode(): ExitFullscreenAction",
       "concept":"Exits fullscreen mode."},
 
-    {"title":"os.requestFullscreenMode()",
+    {"title":"os.requestFullscreenMode(): RequestFullscreenAction",
       "concept":"Attempts to enter fullscreen mode. Depending on which web browser the player is using, this might ask for permission to go fullscreen. Note that iPhones currentrly don't support fullscreen mode."},
 
-    {"title":"os.goToDimension(dimension)",
+    {"title":"os.goToDimension(dimension: string): GoToDimensionAction",
       "concept":"Loads the given dimension into the #gridPortal portal. Triggers the @onPortalChanged shout for the gridPortal. The first parameter is a string and is the dimension that should be loaded."},
 
-    {"title":"os.goToURL(url)",
+    {"title":"os.goToURL(url: string): GoToURLAction",
       "concept":"Redirects the current tab to the given URL. Useful for sending the player to another webpage or ambient experience. The first parameter is a string and is the URL that the player should be sent to. Usually this is a website like https://example.com."},
 
-    {"title":"os.openURL(url)",
+    {"title":"os.openURL(url: string): OpenURLAction",
       "concept":"Opens a new tab with the given URL. Useful for opening another webpage without redirecting the current tab. The first parameter is a string and is the URL that the player should be sent to. Usually this is a website like https://example.com."},
 
-    {"title":"os.hideHtml()",
+    {"title":"os.hideHtml(): HideHtmlAction",
       "concept":"Closes the HTML popup model."},
 
-    {"title":"os.showHtml(html)",
+    {"title":"os.showHtml(html: string): ShowHtmlAction",
       "concept":"Shows some HTML to the player in a popup modal. This can be useful for loading a separate webpage or providing some formatted text. The first parameter is a string and is the HTML that should be shown to the user."},
 
-    {"title":"os.getInputList()",
+    {"title":"os.getInputList(): string[]",
       "concept":"Gets the list of supported inputs. The returned strings can be used for the controller property in os.getInputState(controller, button) calls."},
 
-    {"title":"os.getInputState(controller, button)",
+    {"title":"os.getInputState(controller: string, button: string): (null | 'down' | 'held')",
       "concept":"Gets the state of the given button on the given controller. The first parameter is a string and is the name of the controller that should be checked. Possible values are: ~ mousePointer - The mouse. ~ leftPointer - The left controller. ~ rightPointer - The right controller. ~ keyboard - The keyboard. ~ touch - The touchscreen. The second parameter is a string and is the name of the button that you want to get the state of. Possible values are: ~ left - The left mouse button. Only available on the mouse pointer. On mobile devices this will also be the stat of the first touch. ~ right - The right mouse button. Only available on the mouse pointer. ~ middle - The middle mouse button. Only available on the mouse pointer. ~ primary - The primary controller button. Only available on the left and right pointers. ~ squeeze - The squeeze controller button. Only available on the left and right pointers. ~ Any Key - The button for the given key. Only available on the keyboard. ~ 0 - The first touch. Only available on the touchscreen. ~ 1 - The second touch. Only available on the touchscreen. ~ 2 - The third touch. Only available on the touchscreen. ~ 3 - The fourth touch. Only available on the touchscreen. ~ 5 - The fifth touch. Only available on the touchscreen."},
 
-    {"title":"os.getCameraPosition(portal)",
+    {"title":"os.getCameraPosition(portal: ('grid' | 'miniGrid')): Vector3",
       "concept":"Gets the 3D position that the player's camera is at in the given portal. The first parameter is a ('grid' | 'miniGrid') and is the portal that the camera position should be retrieved for."},
 
-    {"title":"os.getCameraRotation(portal)",
+    {"title":"os.getCameraRotation(portal: ('grid' | 'miniGrid')): object",
       "concept":"Gets the 3D rotation that the player's camera is at in the given portal. The first parameter is a ('grid' | 'miniGrid') and is the portal that the camera rotation should be retrieved for."},
 
-    {"title":"os.getFocusPoint(portal)",
+    {"title":"os.getFocusPoint(portal: ('grid' | 'miniGrid')): Vector3",
       "concept":"Gets the 3D position that the player's camera is focusing on in the given portal. This is the same point that is highlighted when #portalShowFocusPoint is enabled for a portal. The first parameter is a ('grid' | 'miniGrid') and is the portal that the camera focus point should be retrieved for."},
 
-    {"title":"os.getPointerDirection(pointer)",
+    {"title":"os.getPointerDirection(pointer: ('left' | 'right' | 'mouse')): Vector3",
       "concept":"Gets the direction that the given pointer in. Can be combined with math.intersectPlane(origin, direction, planeNormal, planeOrigin) to find where on the ground the pointer is pointing. The first parameter is a ('left' | 'right' | 'mouse') and is the pointer that the direction should be retrieved for."},
 
-    {"title":"os.getPointerPosition(pointer)",
+    {"title":"os.getPointerPosition(pointer: ('left' | 'right' | 'mouse')): Vector3",
       "concept":"Gets the position that the given pointer is at. The first parameter is a ('left' | 'right' | 'mouse') and is the pointer that the position should be retrieved for."},
 
-    {"title":"os.getPointerRotattion(pointer)",
+    {"title":"os.getPointerRotation(pointer: ('left' | 'right' | 'mouse')): object",
       "concept":"Gets the rotation (in euler angles) that the given pointer is at. The first parameter is a ('left' | 'right' | 'mouse') and is the pointer that the rotation should be retrieved for."},
 
-    {"title":"os.disablePointOfView()",
+    {"title":"os.disablePointOfView(): EnablePOVAction",
       "concept":"Disables Point-of-View mode on the device. This will return the camera to its original position, set the camera type back to what it was before, and change the camera controls to the defaults."},
 
-    {"title":"os.enablePointOfView(center)",
+    {"title":"os.enablePointOfView(center: object, imu?: boolean): EnablePOVAction",
       "concept":"Enables Point-of-View mode on the device. Useful for getting a 'ground level' view in the grid portal. This will move the camera to the given position, set the camera type to perspective, and change the camera controls so that dragging the screen causes the camera to look around. It is not possible to manually move the camera in this mode, however it is still possible to use os.focusOn(bot, options) to move the camera. The first parameter is a object and is the position that the camera should be placed at. If not specified, then the camera will be placed at (0, 0, 0). The second parameter is optional and is a boolean and whether the imuPortal should be used to control the camera rotation while in Point-of-View mode."},
 
-    {"title":"os.calculateRayFromCamera(portal)",
+    {"title":"os.calculateRayFromCamera(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), viewportCoordinates: Vector2): Promise<RaycastRay>)",
       "concept":"Calculates the ray that starts at the given portal camera and travels along the path emanating from the given viewport position. Returns a promise that resolves with information about the calculated ray. The first parameter is a ('map' | 'grid' | 'miniGrid' | 'miniMap') and is the name of the portal that should be tested. The second parameter is a Vector2 and is the 2D viewport position that the ray should start at. Viewport positions locate a specific point on the image that the camera produces. (x: 0, y: 0) represents the center of the camera while (x: -1, y: -1) represents the lower left corner and (x: 1, y: 1) represents the upper right corner."},
 
-    {"title":"",
+    {"title":"os.calculateScreenCoordinatesFromViewportCoordinates(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), coordinates: Point2D): Promise<Vector2>",
       "concept":""},
 
     {"title":"",
