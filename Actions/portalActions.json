@@ -88,7 +88,7 @@
       "concept":"Enables Point-of-View mode on the device. Useful for getting a 'ground level' view in the grid portal. This will move the camera to the given position, set the camera type to perspective, and change the camera controls so that dragging the screen causes the camera to look around. It is not possible to manually move the camera in this mode, however it is still possible to use os.focusOn(bot, options) to move the camera. The first parameter is a object and is the position that the camera should be placed at. If not specified, then the camera will be placed at (0, 0, 0). The second parameter is optional and is a boolean and whether the imuPortal should be used to control the camera rotation while in Point-of-View mode."},
 
     {"title":"os.calculateRayFromCamera(portal)",
-      "concept":""},
+      "concept":"Calculates the ray that starts at the given portal camera and travels along the path emanating from the given viewport position. Returns a promise that resolves with information about the calculated ray. The first parameter is a ('map' | 'grid' | 'miniGrid' | 'miniMap') and is the name of the portal that should be tested. The second parameter is a Vector2 and is the 2D viewport position that the ray should start at. Viewport positions locate a specific point on the image that the camera produces. (x: 0, y: 0) represents the center of the camera while (x: -1, y: -1) represents the lower left corner and (x: 1, y: 1) represents the upper right corner."},
 
     {"title":"",
       "concept":""},
