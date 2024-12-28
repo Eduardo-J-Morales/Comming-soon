@@ -87,7 +87,7 @@
     {"title":"os.enablePointOfView(center)",
       "concept":"Enables Point-of-View mode on the device. Useful for getting a 'ground level' view in the grid portal. This will move the camera to the given position, set the camera type to perspective, and change the camera controls so that dragging the screen causes the camera to look around. It is not possible to manually move the camera in this mode, however it is still possible to use os.focusOn(bot, options) to move the camera. The first parameter is a object and is the position that the camera should be placed at. If not specified, then the camera will be placed at (0, 0, 0). The second parameter is optional and is a boolean and whether the imuPortal should be used to control the camera rotation while in Point-of-View mode."},
 
-    {"title":"",
+    {"title":"os.calculateRayFromCamera(portal)",
       "concept":""},
 
     {"title":"",
