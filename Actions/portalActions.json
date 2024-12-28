@@ -1,7 +1,7 @@
 {
   "data":[
     {"title":"os.closeCircleWipe(options?)",
-      "concept":"Causes a circular wipe animationi to close around the screen. This can be used to cover the grid portal while transitioning between scenes. Returns a promise that resolves when the animation has finished running. The promise will throw an exception if os.openCircleW9pe(options) is called while the animation is running. The first parameter is optional and is a Partial<OpenCircleWipeOptions> and is the options that should be used for the effect."},
+      "concept":"Causes a circular wipe animation to close around the screen. This can be used to cover the grid portal while transitioning between scenes. Returns a promise that resolves when the animation has finished running. The promise will throw an exception if os.openCircleWipe(options) is called while the animation is running. The first parameter is optional and is a Partial<OpenCircleWipeOptions> and is the options that should be used for the effect."},
 
     {"title":"os.openCircleWipe(options?)",
       "concept":"Causes the circular wipe animation to open around the screen. This can be used to reveal the grid portal after transitioning between screens. Returns a promise that resolves when the animation has finished running. The first parameter is optional and is a Partial<OpenCircleWipeOptions> and is the options that should be used for the effect."},
@@ -64,7 +64,7 @@
       "concept":"Gets the state of the given button on the given controller. The first parameter is a string and is the name of the controller that should be checked. Possible values are: ~ mousePointer - The mouse. ~ leftPointer - The left controller. ~ rightPointer - The right controller. ~ keyboard - The keyboard. ~ touch - The touchscreen. The second parameter is a string and is the name of the button that you want to get the state of. Possible values are: ~ left - The left mouse button. Only available on the mouse pointer. On mobile devices this will also be the stat of the first touch. ~ right - The right mouse button. Only available on the mouse pointer. ~ middle - The middle mouse button. Only available on the mouse pointer. ~ primary - The primary controller button. Only available on the left and right pointers. ~ squeeze - The squeeze controller button. Only available on the left and right pointers. ~ Any Key - The button for the given key. Only available on the keyboard. ~ 0 - The first touch. Only available on the touchscreen. ~ 1 - The second touch. Only available on the touchscreen. ~ 2 - The third touch. Only available on the touchscreen. ~ 3 - The fourth touch. Only available on the touchscreen. ~ 5 - The fifth touch. Only available on the touchscreen."},
 
     {"title":"os.getCameraPosition(portal)",
-      "concept":"Gets the 3D position that the player's camera is at in the given portal. The first parameter is a ('grid' | 'miniGrid') and is the portal that the camera position shouldbe retrieved for."},
+      "concept":"Gets the 3D position that the player's camera is at in the given portal. The first parameter is a ('grid' | 'miniGrid') and is the portal that the camera position should be retrieved for."},
 
     {"title":"os.getCameraRotation(portal)",
       "concept":"Gets the 3D rotation that the player's camera is at in the given portal. The first parameter is a ('grid' | 'miniGrid') and is the portal that the camera rotation should be retrieved for."},
@@ -79,7 +79,7 @@
       "concept":"Gets the position that the given pointer is at. The first parameter is a ('left' | 'right' | 'mouse') and is the pointer that the position should be retrieved for."},
 
     {"title":"os.getPointerRotattion(pointer)",
-      "concept":"Gets the rotaiton (in euler angles) that the given pointer is at. The first parameter is a ('left' | 'right' | 'mouse') and is the pointer that the rotation should be retrieved for."},
+      "concept":"Gets the rotation (in euler angles) that the given pointer is at. The first parameter is a ('left' | 'right' | 'mouse') and is the pointer that the rotation should be retrieved for."},
 
     {"title":"os.disablePointOfView()",
       "concept":"Disables Point-of-View mode on the device. This will return the camera to its original position, set the camera type back to what it was before, and change the camera controls to the defaults."},
