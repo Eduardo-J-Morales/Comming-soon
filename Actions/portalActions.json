@@ -27,7 +27,7 @@
     {"title":"os.getPortalDimension(portal: string): string",
       "concept":"Gets the dimension that is loaded into the given portal. If no dimension is loaded then null is returned. The first parameter is a string and is the portal that the dimension should be retrieved for."},
 
-    {"title":"oos.hasBotInMiniPortal(bots: (Bot | Bot[])): boolean",
+    {"title":"os.hasBotInMiniPortal(bots: (Bot | Bot[])): boolean",
       "concept":"Determines if the given bot is in the dimension that is currently loaded into the #miniGridPortal portal. The first parameter is (Bot | Bot[]) and is the bot or bots that should be checked."},
 
     {"title":"os.inSheet(): boolean",
