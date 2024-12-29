@@ -27,16 +27,16 @@
     {"title":"@onPointerExit",
       "concept":"A whisper that is sent to a bot when the mouse cursor stops hovering over it."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onPointerDown",
+      "concept":"A whisper that is sent to a bot when the user starts clicking it."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onPointerUp",
+      "concept":"A whisper that is sent to a bot when the user stops clicking it."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onDrag",
+      "concept":"A whisper that is sent whenever a bot is starting to be dragged."},
 
-    {"title":"",
+    {"title":"@onDragging",
       "concept":""},
 
     {"title":"",
