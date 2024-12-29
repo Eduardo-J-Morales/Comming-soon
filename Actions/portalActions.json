@@ -102,13 +102,13 @@
     {"title":"os.raycastFromCamera(portal: ('map' | 'grid' | 'miniGrid' | 'miniMap'), viewportCoordinates: Vector2): Promise<RaycastResult>",
       "concept":"Finds the list of bots that are in the given portal and are intersected by a ray starting at the portal camera and traveling along a path emanating from the given viewport position. Returns a promise that resolves with information about the intersected bots. The first parameter is a ('map' | 'grid' | 'miniGrid' | 'miniMap') and is the portal that should be tested. The second parameter is a Vector2 and is the 2D viewport position that the ray should start at. Viewport positions locate a specific point on the image that the camera produces. (x: 0, y: 0) represents the center of the camera while (x: -1, y: -1) represents the lower left corner and (x: 1, y: 1) represents the upper right corner."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"os.showConfirm(options: ShowConfirmOptions): Promise<boolean>",
+      "concept":"Shows a confirmation dialog using the given options. Confirmation dialogs are useful for giving users the ability to quickly confirm or cancel an action. Returns a promise that resolves with true if the user clicked the 'Confirm' button and false if they closed the dialog or clicked the 'Cancel' button. The first parameter is a ShowConfirmOptions and is the options that should be used for the confirmation dialog."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"os.showInput(currentValue?: any, options?: Partial<ShowInputOptions>): Promise<any>",
+      "concept":"Shows an input modal with the given value and options. When shown, the player will be able to change the value. Returns a Promise that resolves with the final value when the user is finished editing. This function is similar to os.showInputForTag(bot, tag, options) except it doesn't  require a bot and a tag. The first parameter is optional and is a any and is the value that should be shown in the input modal. The second parameter is optional and is a Partial<ShowInputOptions> and is the options that indicate how the input box should be customized."},
 
-    {"title":"",
+    {"title":"os.showInputForTag(bot: (string | Bot), tag: string, options?: Partial<ShowInputOptions>): ShowInputForTagAction",
       "concept":""},
 
     {"title":"",
