@@ -54,22 +54,22 @@
     {"title":"@onCloseInput",
       "concept":"A whisper that is sent when the input box for a bot has been closed by the user."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onListen",
+      "concept":"A whisper that is sent whenever this bot receives a whisper or shout."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onMaxLODEnter",
+      "concept":"A whisper that is sent whenever a bot enters its maximum Level-Of-Detail."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onMinLODEnter",
+      "concept":"A whisper that is sent whenever a bot enters its minimum Level-Of-Detail."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onMaxLODExit",
+      "concept":"A whisper that is sent whenever a bot exits its maximum Level-Of-Detail."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onMinLODExit",
+      "concept":"A whisper that is sent whenever a bot exits its minimum Level-Of-Detail."},
 
-    {"title":"",
+    {"title":"@onFocusEnter",
       "concept":""},
 
     {"title":"",
