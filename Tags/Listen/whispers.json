@@ -37,16 +37,16 @@
       "concept":"A whisper that is sent whenever a bot is starting to be dragged."},
 
     {"title":"@onDragging",
-      "concept":""},
+      "concept":"A whisper that is sent whenever a bot would be moved while dragging. Note that this whisper is only sent for drag operations that have called os.enableCustomDragging()."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onDrop",
+      "concept":"A whisper that is sent whenever a bot has been dropped after being dragged. The whisper is sent to both the bot that was dropped and the bot that was dropped on."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onDropEnter",
+      "concept":"A whisper that is sent to both bots when a bot is dragged onto nother bot."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onDropExit",
+      "concept":"A whisper that is sent to both bots when a bot is dragged off of another bot."},
 
     {"title":"",
       "concept":""},
