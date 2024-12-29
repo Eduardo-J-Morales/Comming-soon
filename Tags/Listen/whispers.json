@@ -1,27 +1,28 @@
 {
   "data":[
-    {"title":"",
-      "concept":""},
+    {"title":"@onCreate",
+      "concept":"A whisper that is sent to a bot when it is first created"},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onDestroy",
+      "concept":"A whisper that is sent to a bot when it is being destroy."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onModDrop",
+      "concept":"A whisper that is sent to a bot that a mode was dropped on. If a custom @onModDrop is not specified, then the mod will be applied automatically. If a custom @onModDrop is specified, then the mod needs to be applied manually via applyMod(bot, ...mods)."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onModDropEnter",
+      "concept":"A whisper that is sent to the bot that a mod started to be dragged onto."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onModDropExit",
+      "concept":"A whisper that is sent to the bot that a mod was just dragged off of."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"@onClick",
+      "concept":"A whisper that is sent to the bot that was clicked."},
 
-    {"title":"",
-      "concept":""},
-    {"title":"",
-      "concept":""},
+    {"title":"@onKeyClick",
+      "concept":"A whisper that is sent to the bot when a key is clicked on it. This event will only be available for bots that have their #form set to keyboard."},
+    
+    {"title":"@onPointerEnter",
+      "concept":"A whisper that is sent to a bot when the mouse cursor starts to hover over it."},
 
     {"title":"",
       "concept":""},
