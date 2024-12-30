@@ -10,7 +10,7 @@
       "concept":"Sends a chat message to the AI. Returns a promise that contains the response from the AI. Throws a CasualOSError if an error occurs while sending the message. This function can be useful for creating chat bots, or for using an Artificial Intelligence (AI) to process a message. The first parameter is a string and is the message that should be sent to the AI. The second parameter is optional and is a AIChatOptions and is the options that should be used."},
 
     {"title":"ai.generateImage(request: AIGenerateImageOptions, options?: RecordActionOptions): Promise<AIGenerateImageSuccess>",
-      "concept":"Generates an image from the given prompt. Returns a promise that resolves with Base64 data"},
+      "concept":""},
 
     {"title":"",
       "concept":""},
