@@ -21,8 +21,8 @@
     {"title":"ai.generateImage(prompt: string, negativePrompt?: string, options?: AIGenerateImageOptions & RecordActionsOptions): Promise<string>",
       "concept":"Generates an image from the given prompt. Returns a promise that resolves with the Base64 data of the generated image that can be used as the #formAddress of a bot. The first parameter is a string and is the string that describes what the image should look like. The second parameter is a string and is the string that describes what the image should look like. The second parameter is optional and is a string that describes what the image should avoid looking like. The third parameter is optional and is a AIGenerateImageOptions & RecordActionOptions and is the additional options that should be used."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"ai.generateSkybox(request: AIGenerateSkyboxRquest): Promise<AIGenerateSkyboxResult>",
+      "concept":"Generates a skybox image from the given reuqest object. Returns a promise that resolves with an object that contains a URL to the generated image that can be used as the #formAddress of a bot that has #form set to skybox. The first parameter is a AIGenerateSkyboxRequest and is the request object that describes what the skybox should look like."},
 
     {"title":"",
       "concept":""},
