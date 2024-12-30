@@ -13,7 +13,7 @@
       "concept":"Generates an image from the given prompt. Returns a promise that resolves with the Base64 data of the generated image that can be used as the #formAddress of a bot. The first parameter is an AIGenerateImageOptions and is the request object that describes what the image should look like. The second parameter is optional and is a RecordActionOptions and is the options for the request."},
 
     {"title":"ai.generateImage(prompt: string, negativePrompt?: string, options?: AIGenerateImageOptions & RecordActionOptions): Promise<string>",
-      "concept":""},
+      "concept":"Generates an image from the given prompt. Returns a promise that resolves with the Base64 data of the generated image that can be used as the #formAddress of a bot. The first parameter is a string that describes what the image should look like. The second parameter is optional and is a string that describes what the image should avoid looking like. The third parameter is optional and is a AIGenerateImageOptions & RecordActionsOptions and is the additional options that should be used."},
 
     {"title":"",
       "concept":""},
