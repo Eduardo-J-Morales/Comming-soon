@@ -31,13 +31,13 @@
       "concept":"Gets an access token for the Hume AI API. Returns a promise that resolves with the access token. The first parameter is optional and is a string and is the name of the record that the access token should be generated for. If omitted, then the user's player studio record will be used."},
 
     {"title":"ai.sloyd.generateModel(request: AISloydGenerateModelOptions, options: RecordActionsOptions): Promise<AISlydGenerateModelResponse>",
-      "concept":"Generates a new 3D model using sloyd.ai. The first parameter is a AISloydGenerateModelOptions and "},
+      "concept":"Generates a new 3D model using sloyd.ai. The first parameter is a AISloydGenerateModelOptions and is the options for the 3D model. The second parameter is a RecordActionsOptions and is the options for the request."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"ai.stream.chat(message: AIChatMessage, options?: AIChatOptions): Promise<AsyncIterable>",
+      "concept":"Sends a chat message to the AI and streams the response back. Returns a promise that resolves with an async iterable that contains the responses from the AI. Throws a CasualOSError if an error occurs while sending the message. This functions can be useful for creating chat bots, or for using an Artificial Intelligence (AI) to process a message. The first parameter is a AIChatMessage and is the message that should be sent to the AI. The second parameter is optional and is a AIChatOptions and is the options and is the options that should be used."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"ai.stream.chat(message: AIChatMessage[], options?: AIChatOptions): Promise<AsyncIterable>",
+      "concept":"Sends a chat message to the AI. Returns a promise that resolves with an async iterable that contians the responses from the AI. Throws a CasualOSError if an error occurs while sending the message. This function can be useful for creating chat bots. or for using an Artificial Intelligence (AI) to process a meessage. The first parameter is a AIChatMessage[]. The second parameter is optional and is a AIChatOptions and is the options that should be used."},
 
     {"title":"",
       "concept":""},
