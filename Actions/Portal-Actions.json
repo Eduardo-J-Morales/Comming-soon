@@ -109,10 +109,10 @@
       "concept":"Shows an input modal with the given value and options. When shown, the player will be able to change the value. Returns a Promise that resolves with the final value when the user is finished editing. This function is similar to os.showInputForTag(bot, tag, options) except it doesn't  require a bot and a tag. The first parameter is optional and is a any and is the value that should be shown in the input modal. The second parameter is optional and is a Partial<ShowInputOptions> and is the options that indicate how the input box should be customized."},
 
     {"title":"os.showInputForTag(bot: (string | Bot), tag: string, options?: Partial<ShowInputOptions>): ShowInputForTagAction",
-      "concept":""},
+      "concept":"Shows an input modal for the given bot and tag with the given options. When shown, the player will be able to change the value stored in the given tag. Triggers the @onSaveInput whisper when the modal is closed with saving and the @onCloseInput whisper when the modal is closed without saving. The first parameter is a (string | Bot) and is the bot or bot ID that the input should be shown for. The second parameter is a string and is the tag that should be edited on the bot. The third parameter is optional and is a Partial<showInputOptions> and is the possible customization options for the input modal."},
 
-    {"title":"",
-      "concept":""},
+    {"title":"os.hideTips(tipIds?: (number | number[])): Promise<void>",
+      "concept":"Hides the tooltips that have the specified IDs. If no arguments are specified, then all tooltips will be hidden. Returns a promise that resolves when the tooltips have been hidden. The first parameter is optional and is a (number | number[]) and is the tooltip ID or array of tooltip IDs that should be hidden."},
 
     {"title":"",
       "concept":""},
