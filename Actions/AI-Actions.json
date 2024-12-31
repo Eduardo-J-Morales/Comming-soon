@@ -39,28 +39,7 @@
     {"title":"ai.stream.chat(message: AIChatMessage[], options?: AIChatOptions): Promise<AsyncIterable>",
       "concept":"Sends a chat message to the AI. Returns a promise that resolves with an async iterable that contians the responses from the AI. Throws a CasualOSError if an error occurs while sending the message. This function can be useful for creating chat bots. or for using an Artificial Intelligence (AI) to process a meessage. The first parameter is a AIChatMessage[]. The second parameter is optional and is a AIChatOptions and is the options that should be used."},
 
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
-
-    {"title":"",
-      "concept":""},
+    {"title":"ai.stream.chat(message: string, options?: AIChatOptoins): Promise<AsyncIterable>",
+      "concept":"Sends a chat message to the AI and streams the resposne back. Returns a promise that resolves with an async iterable that contains the responses from the AI. Throws a CasualOSError if an error occurs while sending the message. The first parameter is a string and is the message that should be sent to the AI. The second parameter is optional and is a AIChatOptions and is the options that should be used."}
   ]
 }
