@@ -112,9 +112,49 @@
       "concept":"Shows an input modal for the given bot and tag with the given options. When shown, the player will be able to change the value stored in the given tag. Triggers the @onSaveInput whisper when the modal is closed with saving and the @onCloseInput whisper when the modal is closed without saving. The first parameter is a (string | Bot) and is the bot or bot ID that the input should be shown for. The second parameter is a string and is the tag that should be edited on the bot. The third parameter is optional and is a Partial<showInputOptions> and is the possible customization options for the input modal."},
 
     {"title":"os.hideTips(tipIds?: (number | number[])): Promise<void>",
-      "concept":"Hides the tooltips that have the specified IDs. If no arguments are specified, then all tooltips will be hidden. Returns a promise that resolves when the tooltips have been hidden. The first parameter is optional and is a (number | number[]) and is the tooltip ID or array of tooltip IDs that should be hidden."},
+      "concept":"Hides the tooltips that havethe specified IDs. If no arguments are specified, then all tooltips will be hidden. Returns a promise that resolves when the tooltips have been hidden. The first parameter is optional and is (number | number[]) and is the tooltip Id or array of tooltip IDs that should be hidden."},
+
+    {"title":"os.tip(message: (string | number | boolean | object | any[]), pixelX?: number, pixelY?: number, duration?: number): Promise<number>",
+      "concept":"Shows a temporary 'tooltip' message on the screen. Optionally placed at the specified position and shown for the given duration. Returns a promise that resolves with the ID of the new tooltip. If a position is not specified, then a position just below the current mouse position will be used. If on mobile, then the last touch position will be used or the center of the screen if the user has not touched the screen. Additionally, if a position is not specified then the tooltip will be automatically hidden if the user moves the mouse significantly away the position that the mouse was at when when the tooltip was shown. The first parameter is a (string | number | boolean | object | any[]) and is the text that the tooltip should show. The second parameter is optional and is a number and is the horizontal pixel position that the tooltip should be shown at on the screen. If not specified then the current mouse position will be used. The third paramter is optional and is a number and is the vertical position that the tooltip should be shown at on the screen. If not specified then a position just below the current mouse position will be used. "},
 
     {"title":"",
       "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+
+    {"title":"",
+      "concept":""},
+    
   ]
 }
